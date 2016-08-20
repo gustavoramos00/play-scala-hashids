@@ -1,0 +1,19 @@
+@(aluguel: domain.Aluguel, carro: domain.Carro)
+
+@main(title = "Aluguel") {
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Aluguel @aluguel.id
+    </div>
+    <dl class="dl-horizontal">
+        <dt>Carro</dt>
+        <dd>@carro.nome</dd>
+
+        <dt>Diárias</dt>
+        <dd>@aluguel.diarias</dd>
+
+        <dt>Valor</dt>
+        <dd>@aluguel.valor</dd>
+    </dl>
+</div>
+}
